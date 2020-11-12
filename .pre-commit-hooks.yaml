@@ -5,3 +5,13 @@
   entry: mypy
   language: python
   pass_filenames: false
+
+- id: lint-markdown
+  name: Lint Markdown files
+  description: In place Markdown linter based on markdownlint
+  entry: markdownlint -f
+  types: [markdown]
+  language: node
+  additional_dependencies:
+    - markdownlint
+    - markdownlint-cli
