@@ -1,0 +1,7 @@
+---
+- id: mypy
+  name: mypy
+  description: Run mypy static type checker
+  entry: mypy
+  language: python
+  pass_filenames: false
